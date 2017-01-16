@@ -1,0 +1,21 @@
+puppet agent installation for ubuntu..
+
+Step 1: Enable the Puppet Package Repository
+
+wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
+sudo dpkg -i puppetlabs-release-trusty.deb
+sudo apt-get update
+
+Step 3: Install Puppet on Agent Nodes
+sudo apt-get install puppet
+
+---peppet agent installation for redhat/centos
+
+{{{{{http://www.tecmint.com/install-puppet-in-centos/}}}}
+
+--Installing release packages on Yum-based systems
+sudo rpm -Uvh https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+
+--Install the puppet-agent package
+
+sudo yum install puppet-agent
